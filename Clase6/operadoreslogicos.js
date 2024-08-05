@@ -71,7 +71,7 @@ console.log (gentilicio2);
 const isValid = true;
 console.log(isValid ?? 'Otra cosa');
 
-const isValid = 150;
+const isValid1 = 150;
 console.log(isValid ?? 'Otra cosa');
 
 // Al comparar, si se esta comparando entre un true y un false da como resultado false 
