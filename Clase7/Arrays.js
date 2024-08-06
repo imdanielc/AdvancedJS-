@@ -132,4 +132,29 @@ console.log('Es palindrome? ', palabraInvertida === palabra)
 
 const fruits = ['Fresas', 'Mora', 'Banano', 'Manzana', 'Papaya', 'Mango'];
 
-console.log (fruits.length);
+for (let i = 0; i < fruits.length; i++) {
+    const fruit = fruits[1];
+    if (fruit.length < 6){
+        console.log(fruit);
+    }
+}
+
+// comparacion entre arrays (referencia vs valor)
+// En arrays y objetos la comparacion se hace por referencia y no por valor
+
+// Comparacion en primitivos
+const num1 = 1;
+const num2 = 2; 
+console.log (num1 == num2);
+
+// Comparacion en arrays
+
+const arr1 = [1, 7, 8];
+const arr2 = [1, 7, 8]; 
+console.log (num1 == num2); // false, Cuando se comparan los arrays o objetos se compara su referencia en memoria:
+const arr3 = arr1; // arr3 esta accediendo a la referencia de memora de arr1
+console.log (arr1 == arr3); // true
+// Si yo cambio algun elemento del arr3 modifico directamente el arr1
+arr3[0] = 2;
+console.log(arr1); // [2, 7, 8];
+
