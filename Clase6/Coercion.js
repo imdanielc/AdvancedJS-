@@ -1,5 +1,7 @@
 // COERCION IMPLICITA
 
+//  Es la conversion automatica de un tyipom de dato a otro y esta a cargo de JS.
+
 console.log (4 + '7'); // '44' String
 console.log (4 * '7'); // 28 Number
 console.log (4 - '7'); // 3 Number
