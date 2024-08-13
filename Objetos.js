@@ -94,3 +94,8 @@ const infoPersona = {
 const infoProfesion = Object.create(infoPersona);
 console.log(infoProfesion);
 console.log(infoProfesion.nombre); // Ana
+console.log(infoProfesion.apellido);
+infoProfesion.profesion = 'Musica';
+infoProfesion.experiencia = 5;
+infoProfesion.cargo = 'Gerente';
+console.log(infoProfesion) 
